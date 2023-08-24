@@ -14,9 +14,8 @@ import os
 
 
 class CreateSampleChainPlaylist:
-    def __init__(self, id, secret):
-        self.id=id
-        self.secret=secret
+    def __init__(self, song):
+        self.song=song
         
     #Step 1: Choose a song on Spotify
     def get_track(self):
