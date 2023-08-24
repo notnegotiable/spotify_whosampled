@@ -4,17 +4,20 @@
 #Step 4: Create a playlist in Spotify
 #Step 5: Add the sample chain to the playlist in chrono order
 
-import spotipy
-import json
-import requests
-from secrets import spotify_user_id
+#import spotipy
+import os
+#import json
+#import requests
+#from spotipy.oauth2 import SpotifyClientCredentials
+#from spotipy import util
+#from spotipy.util import prompt_for_user_token
+
 
 class CreateSampleChainPlaylist:
-
-    def __init__(self):
-        self.user_id = spotify_user_id
-        self.spotify_token = spotify_token
-
+    def __init__(self, id, secret):
+        self.id=id
+        self.secret=secret
+        
     #Step 1: Choose a song on Spotify
     def get_track(self):
         pass
@@ -30,7 +33,6 @@ class CreateSampleChainPlaylist:
     #Step 4: Create a playlist in Spotify
     def create_playlist(self):
         pass
-        )
 
     #Step 5: Add the sample chain to the playlist in chrono order   
     def get_spotify_uri(self, song_name, artist):
@@ -38,5 +40,3 @@ class CreateSampleChainPlaylist:
 
     def add_track_to_playlist(self):
         pass
-
-
